@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.kpu.calculatortext"
+        applicationId "com.kpu.calculatormenu"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

@@ -50,11 +50,13 @@ class MainActivity : AppCompatActivity() {
         editor.clear()
         editNum1.setText(null)
         editNum2.setText(null)
-        resultText.setText("계산 결과")
+        resultText.setText("계산 결과 :")
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        title="CalculatorTest"
 
         var btnArray=arrayOf<Button>(btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9)
 
@@ -100,7 +102,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val resultVal=editNum1.text.toString().toFloat()+editNum2.text.toString().toFloat()
-            resultText.setText(resultVal.toString())
+            resultText.setText("계산결과 : "+resultVal.toString())
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt(),resultVal)
 
 
@@ -114,7 +116,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val resultVal=editNum1.text.toString().toFloat()-editNum2.text.toString().toFloat()
-            resultText.setText(resultVal.toString())
+            resultText.setText("계산결과 : "+resultVal.toString())
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt(),resultVal)
 
 
@@ -131,7 +133,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             val resultVal=editNum1.text.toString().toFloat()/editNum2.text.toString().toFloat()
-            resultText.setText(resultVal.toString())
+            resultText.setText("계산결과 : "+resultVal.toString())
 
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt(),resultVal)
 
@@ -145,7 +147,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val resultVal=editNum1.text.toString().toFloat()*editNum2.text.toString().toFloat()
-            resultText.setText(resultVal.toString())
+            resultText.setText("계산결과 : "+resultVal.toString())
 
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt(),resultVal)
 

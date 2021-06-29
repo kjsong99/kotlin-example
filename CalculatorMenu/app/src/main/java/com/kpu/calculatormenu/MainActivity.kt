@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
                 val resultVal=editNum1.text.toString().toInt()+editNum2.text.toString().toInt()
-                result.setText(resultVal.toString())
+                result.setText("계산 결과 : "+resultVal.toString())
                 return true
             }
 
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
                 saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
                 val resultVal=editNum1.text.toString().toInt()-editNum2.text.toString().toInt()
-                result.setText(resultVal.toString())
+                result.setText("계산 결과 : "+resultVal.toString())
                 return true
             }
 
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
                 saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
                 val resultVal=editNum1.text.toString().toInt()*editNum2.text.toString().toInt()
-                result.setText(resultVal.toString())
+                result.setText("계산 결과 : "+resultVal.toString())
                 return true
             }
 
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
                 val resultVal=editNum1.text.toString().toFloat()/editNum2.text.toString().toFloat()
-                result.setText(resultVal.toString())
+                result.setText("계산 결과 : "+resultVal.toString())
                 return true
             }
         }
@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.delete_all->{
                 deleteAll()
-                result.setText("계산 결과")
+                result.setText("계산 결과 : ")
                 return true
             }
         }
