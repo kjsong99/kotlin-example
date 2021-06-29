@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.preference.PreferenceManager
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,42 +27,99 @@ class MainActivity : AppCompatActivity() {
             editNum2.setText(num2.toString())
         }
     }
+
+    private fun deleteNum1(){
+        val pref= PreferenceManager.getDefaultSharedPreferences(this)
+        val editor=pref.edit()
+        editor.remove("KEY_NUM1")
+        editNum1.setText(null)
+    }
+
+    private fun deleteNum2(){
+        val pref= PreferenceManager.getDefaultSharedPreferences(this)
+        val editor=pref.edit()
+        editor.remove("KEY_NUM2")
+        editNum2.setText(null)
+    }
+
+    private fun deleteAll(){
+        val pref= PreferenceManager.getDefaultSharedPreferences(this)
+        val editor=pref.edit()
+        editor.clear()
+        editNum1.setText(null)
+        editNum2.setText(null)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnNum1.setOnClickListener {
+            deleteNum1()
+        }
+
+        btnNum2.setOnClickListener {
+            deleteNum2()
+        }
+
+        btnAll.setOnClickListener {
+            deleteAll()
+        }
+
         loadData()
         plusButton.setOnClickListener {
-            startActivity<PlusActivity>(
-                "num1" to editNum1.text.toString(),
-                "num2" to editNum2.text.toString()
-            )
+
+            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                toast("숫자를 입력하세요!")
+                return@setOnClickListener
+
+            }
+
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+            val resultVal=editNum1.text.toString().toInt()+editNum2.text.toString().toInt()
+            result.setText(resultVal.toString())
 
 
         }
         minusButton.setOnClickListener {
-            startActivity<MinusActivity>(
-                "num1" to editNum1.text.toString(),
-                "num2" to editNum2.text.toString()
-            )
+
+            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                toast("숫자를 입력하세요!")
+                return@setOnClickListener
+
+            }
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+            val resultVal=editNum1.text.toString().toInt()-editNum2.text.toString().toInt()
+            result.setText(resultVal.toString())
+
 
         }
         divButton.setOnClickListener {
-            startActivity<DivActivity>(
-                "num1" to editNum1.text.toString(),
-                "num2" to editNum2.text.toString()
-            )
+            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                toast("숫자를 입력하세요!")
+                return@setOnClickListener
+
+            }
+            if(editNum2.text.toString().toInt()==0){
+                toast("0으로 나눌 수 없습니다!")
+                return@setOnClickListener
+
+            }
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+            val resultVal=editNum1.text.toString().toFloat()/editNum2.text.toString().toFloat()
+            result.setText(resultVal.toString())
 
         }
         mulButton.setOnClickListener {
-            startActivity<MulActivity>(
-                "num1" to editNum1.text.toString(),
-                "num2" to editNum2.text.toString()
-            )
+
+            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                toast("숫자를 입력하세요!")
+                return@setOnClickListener
+
+            }
             saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+            val resultVal=editNum1.text.toString().toInt()*editNum2.text.toString().toInt()
+            result.setText(resultVal.toString())
+
 
         }
     }
