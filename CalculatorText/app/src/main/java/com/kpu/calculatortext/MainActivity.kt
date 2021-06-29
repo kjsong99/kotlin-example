@@ -3,11 +3,112 @@ package com.kpu.calculatortext
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.view.ContextMenu
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main,menu)
+        return true
+    }
+
+    override fun onCreateContextMenu(
+        menu: ContextMenu?,
+        v: View?,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        menuInflater.inflate(R.menu.context,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId)
+        {
+            R.id.action_plus->{
+                if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                    toast("숫자를 입력하세요!")
+                    return false
+
+                }
+                saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+                val resultVal=editNum1.text.toString().toInt()+editNum2.text.toString().toInt()
+                result.setText(resultVal.toString())
+                return true
+            }
+
+            R.id.action_minus->{
+
+                if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                    toast("숫자를 입력하세요!")
+                    return false
+
+                }
+
+                saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+                val resultVal=editNum1.text.toString().toInt()-editNum2.text.toString().toInt()
+                result.setText(resultVal.toString())
+                return true
+            }
+
+            R.id.action_mul->{
+
+                if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                    toast("숫자를 입력하세요!")
+                    return false
+
+                }
+
+                saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+                val resultVal=editNum1.text.toString().toInt()*editNum2.text.toString().toInt()
+                result.setText(resultVal.toString())
+                return true
+            }
+
+            R.id.action_div->{
+                if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+                    toast("숫자를 입력하세요!")
+                    return false
+
+                }
+                if(editNum2.text.toString().toInt()==0){
+                    toast("0으로 나눌 수 없습니다!")
+                    return false
+
+                }
+                saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+                val resultVal=editNum1.text.toString().toFloat()/editNum2.text.toString().toFloat()
+                result.setText(resultVal.toString())
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId){
+            R.id.delete_num1->{
+                deleteNum1()
+                return true
+            }
+            R.id.delete_num2->{
+                deleteNum2()
+                return true
+            }
+            R.id.delete_all->{
+                deleteAll()
+                result.setText("계산 결과")
+                return true
+            }
+        }
+        return super.onContextItemSelected(item)
+    }
+
+
 
     private fun saveData(num1:Int,num2:Int){
         val pref= PreferenceManager.getDefaultSharedPreferences(this)
@@ -53,74 +154,76 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnNum1.setOnClickListener {
-            deleteNum1()
-        }
+        registerForContextMenu(result)
 
-        btnNum2.setOnClickListener {
-            deleteNum2()
-        }
-
-        btnAll.setOnClickListener {
-            deleteAll()
-        }
+//        btnNum1.setOnClickListener {
+//            deleteNum1()
+//        }
+//
+//        btnNum2.setOnClickListener {
+//            deleteNum2()
+//        }
+//
+//        btnAll.setOnClickListener {
+//            deleteAll()
+//        }
 
         loadData()
-        plusButton.setOnClickListener {
-
-            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
-                toast("숫자를 입력하세요!")
-                return@setOnClickListener
-
-            }
-
-            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
-            val resultVal=editNum1.text.toString().toInt()+editNum2.text.toString().toInt()
-            result.setText(resultVal.toString())
-
-
-        }
-        minusButton.setOnClickListener {
-
-            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
-                toast("숫자를 입력하세요!")
-                return@setOnClickListener
-
-            }
-            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
-            val resultVal=editNum1.text.toString().toInt()-editNum2.text.toString().toInt()
-            result.setText(resultVal.toString())
-
-
-        }
-        divButton.setOnClickListener {
-            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
-                toast("숫자를 입력하세요!")
-                return@setOnClickListener
-
-            }
-            if(editNum2.text.toString().toInt()==0){
-                toast("0으로 나눌 수 없습니다!")
-                return@setOnClickListener
-
-            }
-            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
-            val resultVal=editNum1.text.toString().toFloat()/editNum2.text.toString().toFloat()
-            result.setText(resultVal.toString())
-
-        }
-        mulButton.setOnClickListener {
-
-            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
-                toast("숫자를 입력하세요!")
-                return@setOnClickListener
-
-            }
-            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
-            val resultVal=editNum1.text.toString().toInt()*editNum2.text.toString().toInt()
-            result.setText(resultVal.toString())
-
-
-        }
+//        plusButton.setOnClickListener {
+//
+//            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+//                toast("숫자를 입력하세요!")
+//                return@setOnClickListener
+//
+//            }
+//
+//            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+//            val resultVal=editNum1.text.toString().toInt()+editNum2.text.toString().toInt()
+//            result.setText(resultVal.toString())
+//
+//
+//        }
+//        minusButton.setOnClickListener {
+//
+//            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+//                toast("숫자를 입력하세요!")
+//                return@setOnClickListener
+//
+//            }
+//            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+//            val resultVal=editNum1.text.toString().toInt()-editNum2.text.toString().toInt()
+//            result.setText(resultVal.toString())
+//
+//
+//        }
+//        divButton.setOnClickListener {
+//            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+//                toast("숫자를 입력하세요!")
+//                return@setOnClickListener
+//
+//            }
+//            if(editNum2.text.toString().toInt()==0){
+//                toast("0으로 나눌 수 없습니다!")
+//                return@setOnClickListener
+//
+//            }
+//            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+//            val resultVal=editNum1.text.toString().toFloat()/editNum2.text.toString().toFloat()
+//            result.setText(resultVal.toString())
+//
+//        }
+//        mulButton.setOnClickListener {
+//
+//            if(editNum1.text.toString()==""||editNum2.text.toString()==""){
+//                toast("숫자를 입력하세요!")
+//                return@setOnClickListener
+//
+//            }
+//            saveData(editNum1.text.toString().toInt(),editNum2.text.toString().toInt())
+//            val resultVal=editNum1.text.toString().toInt()*editNum2.text.toString().toInt()
+//            result.setText(resultVal.toString())
+//
+//
+//        }
     }
 }
