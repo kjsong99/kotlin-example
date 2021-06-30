@@ -1,0 +1,2 @@
+rootProject.name = "TiltSensorCircle"
+include ':app'

@@ -1,4 +1,4 @@
-package com.kpu.calculatormenu
+mpackage com.kpu.calculatormenu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
