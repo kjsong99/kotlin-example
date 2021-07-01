@@ -1,15 +1,8 @@
-package com.kpu.todolist_realm
+package com.kpu.item_realm
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
-import com.kpu.todolist_realm.databinding.ActivityMainBinding
+
 import io.realm.Realm
 import io.realm.Sort
 import io.realm.kotlin.where

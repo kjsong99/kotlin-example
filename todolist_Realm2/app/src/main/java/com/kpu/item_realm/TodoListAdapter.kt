@@ -1,5 +1,4 @@
 package com.kpu.todolist_realm
-import android.text.format.DateFormat.format
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,9 @@ import android.text.format.DateFormat
 class TodoListAdapter(realmResult:OrderedRealmCollection<Todo>) :RealmBaseAdapter<Todo>(realmResult){
     class ViewHolder(view:View){
         val dateTextVIew:TextView=view.findViewById(R.id.text1)
-        val textTextView:TextView=view.findViewById(R.id.textClean)
+        val textTextView:TextView=view.findViewById(R.id.Text2)
+        val numberTextView:TextView=view.findViewById(R.id.text3)
+        val addressTextView:TextView=view.findViewById(R.id.text4)
     }
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val vh:ViewHolder
@@ -29,8 +30,10 @@ class TodoListAdapter(realmResult:OrderedRealmCollection<Todo>) :RealmBaseAdapte
 
         if(adapterData!=null){
             val item=adapterData!![position]
-            vh.textTextView.text=item.title
-            vh.dateTextVIew.text=DateFormat.format("MM/dd",item.date)
+            vh.textTextView.text="장비명 : "+item.title.toString()
+            vh.dateTextVIew.text="날짜 : "+DateFormat.format("MM/dd",item.date)
+            vh.numberTextView.text="개수 : "+item.number.toString()
+            vh.addressTextView.text="배송 : "+item.address.toString()
 
         }
         return view
