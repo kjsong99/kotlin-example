@@ -2,13 +2,14 @@ package com.kpu.todolist_realm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
+import android.widget.Toast
 import io.realm.Realm
 import io.realm.kotlin.createObject
 import io.realm.kotlin.where
 import kotlinx.android.synthetic.main.activity_edit.*
 import org.jetbrains.anko.alert
+import org.jetbrains.anko.toast
 import org.jetbrains.anko.yesButton
 import java.util.*
 
@@ -50,7 +51,9 @@ class EditActivity : AppCompatActivity() {
 
     private fun updateMode(id:Long){
         val todo=realm.where<Todo>().equalTo("id",id).findFirst()!!
-        todoEditText.setText(todo.title)
+        editText1.setText(todo.title)
+        editText2.setText(todo.number.toString())
+        editText3.setText(todo.address)
         calendarView.date=todo.date
 
         doneFab.setOnClickListener {
@@ -65,9 +68,13 @@ class EditActivity : AppCompatActivity() {
     private fun insertTodo(){
         realm.beginTransaction()
         val todo=realm.createObject<Todo>(nextId())
-        todo.title=todoEditText.text.toString()
+        todo.title=editText1.text.toString()
         todo.date=calendar.timeInMillis
+        todo.number=editText2.text.toString().toInt()
+        todo.address=editText3.text.toString()
         realm.commitTransaction()
+
+        toast("추가됨")
 
         alert("내용이 추가되었습니다"){
             yesButton {
@@ -81,10 +88,15 @@ class EditActivity : AppCompatActivity() {
         realm.beginTransaction()
         val todo=realm.where<Todo>().equalTo("id",id).findFirst()!!
 
-        todo.title=todoEditText.text.toString()
+        todo.title=editText1.text.toString()
         todo.date=calendar.timeInMillis
+        todo.number=editText2.text.toString().toInt()
+        todo.address=editText3.text.toString()
 
         realm.commitTransaction()
+
+        toast("변경됨")
+
         alert("내용이 변경되었습니다")
         {
             yesButton { finish() }
@@ -96,6 +108,8 @@ class EditActivity : AppCompatActivity() {
         val todo=realm.where<Todo>().equalTo("id",id).findFirst()!!
         todo.deleteFromRealm()
         realm.commitTransaction()
+
+        toast("삭제됨")
 
         alert("내용이 삭제되었습니다")
         {
