@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="faf6eeab-8113-4862-bca1-5d64244ad4e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/kpu/sensorlist/SensorListAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/sensor_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/androidTest/java/com/kpu/todolist/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/java/com/kpu/todolist/FirstFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/java/com/kpu/todolist/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/java/com/kpu/todolist/SecondFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/layout/content_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/layout/fragment_first.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/layout/fragment_second.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/app/src/test/java/com/kpu/todolist/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList_Realm/app/src/main/java/com/kpu/todolist_realm/EditActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList_Realm/app/src/main/res/layout/activity_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../toDoList_Realm/app/src/main/res/layout/activity_edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toDoList_Realm/app/src/main/res/mipmap-xxxhdpi/kr_todolist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/androidTest/java/com/kpu/item_realm/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/java/com/kpu/item_realm/EditActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/java/com/kpu/item_realm/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/java/com/kpu/item_realm/Migration.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/java/com/kpu/item_realm/MyApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/java/com/kpu/item_realm/Todo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/java/com/kpu/item_realm/TodoListAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/drawable/ic_baseline_add_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/drawable/ic_baseline_delete_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/drawable/ic_baseline_done_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/layout/activity_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/layout/item_todo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xxhdpi/kr_todolist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/app/src/test/java/com/kpu/item_realm/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist_Realm2/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/song-gyeongjin/.android/avd/Galaxy_Nexus_API_28.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1uhoNv9qDT1cxpbLH32Tf9lY5fb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="sensorList.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faf6eeab-8113-4862-bca1-5d64244ad4e2" name="Default Changelist" comment="" />
+      <created>1625127144476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625127144476</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="506" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1625128498359">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="506" y="182" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1625128498359" />
+    <state x="101" y="125" width="1240" height="675" key="AVDManager" timestamp="1625136760564">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="101" y="125" width="1240" height="675" key="AVDManager/0.25.1440.875@0.25.1440.875" timestamp="1625136760564" />
+    <state x="309" y="221" key="AndroidCreateResourceFileDialog" timestamp="1625128537327">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="309" y="221" key="AndroidCreateResourceFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1625128537327" />
+    <state width="1398" height="315" key="GridCell.Tab.0.bottom" timestamp="1625137357375">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1398" height="315" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1625137357375" />
+    <state width="1398" height="315" key="GridCell.Tab.0.center" timestamp="1625137357374">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1398" height="315" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1625137357374" />
+    <state width="1398" height="315" key="GridCell.Tab.0.left" timestamp="1625137357374">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1398" height="315" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1625137357374" />
+    <state width="1398" height="315" key="GridCell.Tab.0.right" timestamp="1625137357374">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1398" height="315" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1625137357374" />
+  </component>
+</project>
