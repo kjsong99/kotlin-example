@@ -1,0 +1,2 @@
+rootProject.name = "Flasglight"
+include ':app'
